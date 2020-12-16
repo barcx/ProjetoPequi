@@ -6,7 +6,7 @@ O objetivo do projeto é implementar as mais comuns tecnologias utilizadas pela 
 Para manter as coisas simples, mas seguindo as orientações de uma arquitetura com separação de conceitos e de DDD, começaremos implementando as operações de um CRUD para entidade Cliente em ASP.NET CORE Razor Pages.
 
 
-## Tecnlogias utilizadas:
+## Tecnologias utilizadas:
 
 - .NET 5.0
 - ASP.NET Core Razor Pages
