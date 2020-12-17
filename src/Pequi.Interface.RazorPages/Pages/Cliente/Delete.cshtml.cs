@@ -44,13 +44,12 @@ namespace Pequi.Interface.RazorPages.Pages.Cliente
             try
             {
                 await _servico.Excluir(id.Value);
+                return RedirectToPage("./Index");
             }
             catch (DbUpdateConcurrencyException)
             {
                 return NotFound();
             }
-
-            return RedirectToPage("./Index"); ;
         }
     }
 }

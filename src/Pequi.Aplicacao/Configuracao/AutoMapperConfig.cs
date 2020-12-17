@@ -9,7 +9,10 @@ namespace Pequi.Aplicacao.Configuracao
     {
         public static void AddAutoMapperConfiguration(this IServiceCollection services)
         {
-            if (services == null) throw new ArgumentNullException(nameof(services));
+            if (services == null)
+            {
+                throw new ArgumentNullException(nameof(services));
+            }
 
             services.AddAutoMapper(typeof(DominioParaViewModelMappingProfile), typeof(ViewModelParaDominioMappingProfile));
         }

@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Pequi.Dominio.Interfaces;
 using Pequi.Dominio.Entidades;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Pequi.Dominio.Exceptions;
 
 namespace Pequi.Infra.Dados.EF.Repositorio
 {
     public class ClienteRepositorio : IClienteRepositorio
     {
-        private PequiContext _context;
+        private readonly PequiContext _context;
 
         public ClienteRepositorio(PequiContext context)
         {
@@ -30,7 +30,10 @@ namespace Pequi.Infra.Dados.EF.Repositorio
         public async Task Excluir(int id)
         {
             var cliente = await _context.Cliente.FindAsync(id);
-            if (cliente == null) throw new Exception("Registro inexistente!");
+            if (cliente == null)
+            {
+                throw new PequiException("Registro inexistente!");
+            }
 
             _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
