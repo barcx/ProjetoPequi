@@ -1,0 +1,8 @@
+version: 1.0.{build}
+before_build:
+- cmd: >-
+    dotnet restore
+
+    dotnet build
+build:
+  verbosity: minimal
