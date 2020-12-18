@@ -8,43 +8,43 @@ Para manter as coisas simples, mas seguindo as orientações de uma arquitetura 
 
 ## Tecnologias utilizadas:
 
-- .NET 5.0
-- ASP.NET Core Razor Pages
-- Entity Framework Core 5.0
-- .NET Core Native DI
-- [AutoMapper](https://automapper.org/)
+-  .NET 5.0
+-  ASP.NET Core Razor Pages
+-  Entity Framework Core 5.0
+-  .NET Core Native DI
+-  [AutoMapper](https://automapper.org/)
 
 ## Arquitetura:
 
-- Arquitetura com separação de conceitos, SOLID e Clean Code
-- Domain Driven Design (Layers and Domain Model Pattern)
-- Repository
+-  Arquitetura com separação de conceitos, SOLID e Clean Code
+-  Domain Driven Design (Layers and Domain Model Pattern)
+-  Repository
 
 ## Roadmap:
 
-- Teste de Unidade
-- [FluentValidator](https://fluentvalidation.net/)
-- ASP.NET Core MVC
-- ASP.NET WebApi
-- Versionamento de API
-- [Swagger](https://swagger.io/)
-- ASP.NET Identity Core
-- ASP.NET WebApi com JWT Bearer Authentication
-- Angular
-- Kubernetes
-- Deploy na AWS e Azure
-- SignalR
-- CQRS
-- Mediator Pattern
-- Domain Events
-- Domain Notification
-- Domain Validations
-- Event Sourcing
+-  Teste de Unidade
+-  [FluentValidator](https://fluentvalidation.net/)
+-  ASP.NET Core MVC
+-  ASP.NET WebApi
+-  Versionamento de API
+-  [Swagger](https://swagger.io/)
+-  ASP.NET Identity Core
+-  ASP.NET WebApi com JWT Bearer Authentication
+-  Angular
+-  Kubernetes
+-  Deploy na AWS e Azure
+-  SignalR
+-  CQRS
+-  Mediator Pattern
+-  Domain Events
+-  Domain Notification
+-  Domain Validations
+-  Event Sourcing
 
 ## Avisos:
-- O projeto **não** é destinado a ser uma solução definitiva. O conceito original do projeto é uma solução para aprendizado e referência.
-- Cuidado ao usar em ambiente de produção. O uso é por sua conta e risco.
-- Talvez você não precise da gama de implementações realizadas. Avalie a necessidade do seu projeto.
+-  O projeto **não** é destinado a ser uma solução definitiva. O conceito original do projeto é uma solução para aprendizado e referência.
+-  Cuidado ao usar em ambiente de produção. O uso é por sua conta e risco.
+-  Talvez você não precise da gama de implementações realizadas. Avalie a necessidade do seu projeto.
 
 ## Por que Pequi?
 O nome do projeto é uma homenagem aos meu filhos **Pe**dro e Joa**qui**m.

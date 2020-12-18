@@ -42,30 +42,10 @@ namespace Pequi.Interface.RazorPages.Pages.Cliente
             if (!ModelState.IsValid)
             {
                 return Page();
-            }
-
-            try
-            {
-                await _servico.Atualizar(Cliente);
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (await ClienteExistsAsync(Cliente.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            } 
+            
+            await _servico.Atualizar(Cliente);
             return RedirectToPage("./Index");
-        }
-
-        private async Task<bool> ClienteExistsAsync(int id)
-        {
-            return await _servico.ObterPorId(id) == null;
         }
     }
 }
