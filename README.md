@@ -1,6 +1,7 @@
 # O que é o Projeto Pequi?
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1e90cb8b97e747889de2105e466a9748)](https://app.codacy.com/gh/barcx/ProjetoPequi?utm_source=github.com&utm_medium=referral&utm_content=barcx/ProjetoPequi&utm_campaign=Badge_Grade)
+[![Build status](https://ci.appveyor.com/api/projects/status/h1id15am9o98b8t6?svg=true)](https://ci.appveyor.com/project/barcx/projetopequi)
 
 O Projeto Pequi é um projeto open-source escrito em .NET 5.0.
 
