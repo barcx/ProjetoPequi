@@ -2,6 +2,7 @@
 using Pequi.Dominio.Entidades;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Pequi.Dominio.Exceptions;
 
 namespace Pequi.Dominio.Negocio
 {
@@ -16,6 +17,11 @@ namespace Pequi.Dominio.Negocio
 
         public async Task Adicionar(Cliente cliente)
         {
+            if (!cliente.IsValid())
+            {
+                throw new PequiException($"Erro ao salvar novo cliente. Mensagem: {cliente.ValidationResult.Errors[0].ErrorMessage}");
+            }
+
             await _repositorio.Adicionar(cliente);
         }
 

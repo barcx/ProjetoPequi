@@ -20,6 +20,8 @@ namespace Pequi.Infra.Dados.EF
             entity.Property(e => e.Nome)
                 .IsRequired()
                 .HasMaxLength(100);
+
+            entity.Ignore(e => e.ValidationResult);
         }
     }
 }
