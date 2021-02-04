@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pequi.Aplicacao", "src\Pequ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pequi.Interface.RazorPages", "src\Pequi.Interface.RazorPages\Pequi.Interface.RazorPages.csproj", "{4864802F-63D3-4D71-AC21-8099BB02A751}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{263553B3-5FDC-4755-8945-45677CCF6EF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pequi.Interface.IdentityServer", "src\Pequi.Interface.IdentityServer\Pequi.Interface.IdentityServer.csproj", "{6097B529-FCB2-4238-B811-27195C06D1D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,10 @@ Global
 		{4864802F-63D3-4D71-AC21-8099BB02A751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4864802F-63D3-4D71-AC21-8099BB02A751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4864802F-63D3-4D71-AC21-8099BB02A751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6097B529-FCB2-4238-B811-27195C06D1D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6097B529-FCB2-4238-B811-27195C06D1D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6097B529-FCB2-4238-B811-27195C06D1D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6097B529-FCB2-4238-B811-27195C06D1D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{EBC740FC-3FE6-4C08-8B06-7BF945B7EDD8} = {EEB22679-8871-4E4C-9AA1-C33DC2512B3A}
 		{1FAC7AD1-A34D-45F2-AD9C-F75642D0ABF5} = {B15DA9E3-E1E4-4430-9563-706C57D72F09}
 		{4864802F-63D3-4D71-AC21-8099BB02A751} = {C34FA7BB-CD40-4DB1-A2C7-88EF92595E94}
+		{6097B529-FCB2-4238-B811-27195C06D1D3} = {263553B3-5FDC-4755-8945-45677CCF6EF6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B495B4C-35EE-4AB0-AEF9-995DCB990549}

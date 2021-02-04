@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Pequi.Aplicacao.Configuracao;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Pequi.Interface.RazorPages
 {
@@ -20,6 +21,27 @@ namespace Pequi.Interface.RazorPages
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = "Cookies";
+                options.DefaultChallengeScheme = "oidc";
+            })
+            .AddCookie("Cookies")
+            .AddOpenIdConnect("oidc", options =>
+            {
+                options.Authority = "https://localhost:5001";
+
+                options.ClientId = "mvc";
+                options.ClientSecret = "secret";
+                options.ResponseType = "code";
+
+                options.SaveTokens = true;
+                options.Scope.Add("profile");
+                options.GetClaimsFromUserInfoEndpoint = true;
+            });
 
             // Setting DBContexts
             services.AddDatabaseConfiguration(Configuration);
@@ -49,12 +71,13 @@ namespace Pequi.Interface.RazorPages
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapRazorPages()
+                    .RequireAuthorization();
             });
         }
     }
