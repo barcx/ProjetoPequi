@@ -15,7 +15,7 @@ namespace Pequi.Interface.RazorPages.Pages.Cliente
             _servico = servico;
         }
 
-        public IList<ClienteViewModel> Cliente { get; set; }
+        public IEnumerable<ClienteViewModel> Cliente { get; set; }
 
         public async Task OnGetAsync()
         {

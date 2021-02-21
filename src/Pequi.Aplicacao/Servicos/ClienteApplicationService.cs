@@ -41,9 +41,9 @@ namespace Pequi.Aplicacao.Servicos
             return _mapper.Map<ClienteViewModel>(await _servico.ObterPorId(id));
         }
 
-        public async Task<IList<ClienteViewModel>> ObterTodos()
+        public async Task<IEnumerable<ClienteViewModel>> ObterTodos()
         {
-            return _mapper.Map<IList<ClienteViewModel>>(await _servico.ObterTodos());
+            return _mapper.Map<IEnumerable<ClienteViewModel>>(await _servico.ObterTodos());
         }
     }
 }

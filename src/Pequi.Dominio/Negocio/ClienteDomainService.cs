@@ -40,7 +40,7 @@ namespace Pequi.Dominio.Negocio
             return await _repositorio.ObterPorId(id);
         }
 
-        public async Task<IList<Cliente>> ObterTodos()
+        public async Task<IEnumerable<Cliente>> ObterTodos()
         {
             return await _repositorio.ObterTodos();
         }

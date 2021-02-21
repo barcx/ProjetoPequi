@@ -44,7 +44,7 @@ namespace Pequi.Infra.Dados.EF.Repositorio
             return await _context.Cliente.FindAsync(id);
         }
 
-        public async Task<IList<Cliente>> ObterTodos()
+        public async Task<IEnumerable<Cliente>> ObterTodos()
         {
             return await _context.Cliente.ToListAsync();
         }

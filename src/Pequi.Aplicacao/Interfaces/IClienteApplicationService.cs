@@ -7,7 +7,7 @@ namespace Pequi.Aplicacao.Interfaces
     public interface IClienteApplicationService
     {
         Task<ClienteViewModel> ObterPorId(int id);
-        Task<IList<ClienteViewModel>> ObterTodos();
+        Task<IEnumerable<ClienteViewModel>> ObterTodos();
         Task Adicionar(ClienteViewModel cliente);
         Task Atualizar(ClienteViewModel cliente);
         Task Excluir(int id);
