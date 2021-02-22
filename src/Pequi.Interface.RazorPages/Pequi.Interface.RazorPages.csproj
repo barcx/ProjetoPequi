@@ -18,5 +18,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Pequi.Aplicacao\Pequi.Aplicacao.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <SonarQubeSetting Include="sonar.coverage.exclusions">
+      <Value>**/wwwroot/**/*.js, **/wwwroot/**/*.css</Value>
+    </SonarQubeSetting>
+  </ItemGroup>
 
 </Project>
