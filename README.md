@@ -17,6 +17,7 @@ Para manter as coisas simples, mas seguindo as orientações de uma arquitetura 
 -  Entity Framework Core 5.0
 -  .NET Core Native DI
 -  [AutoMapper](https://automapper.org/)
+-  [Identity Server 4](https://github.com/IdentityServer/IdentityServer4)
 
 ## Arquitetura:
 
@@ -32,18 +33,11 @@ Para manter as coisas simples, mas seguindo as orientações de uma arquitetura 
 -  ASP.NET WebApi
 -  Versionamento de API
 -  [Swagger](https://swagger.io/)
--  ASP.NET Identity Core
 -  ASP.NET WebApi com JWT Bearer Authentication
 -  Angular
 -  Kubernetes
 -  Deploy na AWS e Azure
 -  SignalR
--  CQRS
--  Mediator Pattern
--  Domain Events
--  Domain Notification
--  Domain Validations
--  Event Sourcing
 
 ## Avisos:
 -  O projeto **não** é destinado a ser uma solução definitiva. O conceito original do projeto é uma solução para aprendizado e referência.
